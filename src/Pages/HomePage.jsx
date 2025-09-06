@@ -2,8 +2,6 @@
 import Layout from "../Components/Layout";
 import Header from "../Components/Header";
 import RegisterButton from "../Buttons/RegisterButton";
-// import GalleryButton from "../Buttons/GalleryButton";
-// import MediaCoverageButton from "../Buttons/MediaCoverageButton";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -21,10 +19,7 @@ const topImages = importAll(
 const HomePage = () => {
   return (
     <Layout>
-      <Header
-        heading="Modi Yuva Marathon - For Nasha Mukt Bharat"
-        showBackButton={true}
-      />
+      <Header heading="Modi Yuva Marathon - For Nasha Mukt Bharat"/>
 
       <div className="flex flex-col justify-center items-center px-4 py-6">
         <section className="w-full max-w-3xl mx-auto px-4 py-4 text-center">

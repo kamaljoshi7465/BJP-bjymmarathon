@@ -11,7 +11,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="text-[#fb5d16] font-semibold hover:underline"
         >
-          Ryientsoft Technology
+          Ryientsoft Technologies Pvt. Ltd.
         </a>
       </p>
     </footer>
