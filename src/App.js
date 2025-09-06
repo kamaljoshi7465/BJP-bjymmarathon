@@ -1,13 +1,13 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage';
-import Introduction from './Pages/Introduction';
-import About from './Pages/About';
-import Highlight from './Pages/Highlight';
 import RegistrationForm from './Pages/RegistrationForm';
-import Certificate from './Pages/Certificate';
-import Gallery from './Pages/Gallery';
-import MediaCoverage from './Pages/MediaCoverage';
+// import Introduction from './Pages/Introduction';
+// import About from './Pages/About';
+// import Highlight from './Pages/Highlight';
+// import Certificate from './Pages/Certificate';
+// import Gallery from './Pages/Gallery';
+// import MediaCoverage from './Pages/MediaCoverage';
 
 function App() {
   return (
