@@ -19,7 +19,7 @@ function Gallery() {
     <Layout>
       <div className="max-w-7xl mx-auto px-4">
         <Header
-          heading="BJYM Uttar Pradesh presents — Mock Parliament 2025"
+          heading="BJYM Uttar Pradesh presents — Modi Yuva Marathon 2025"
           showBackButton={true}
         />
 
@@ -38,7 +38,7 @@ function Gallery() {
                   <div className="w-full h-[30rem]">
                     <img
                       src={imgSrc}
-                      alt={`Mock Parliament ${index + 1}`}
+                      alt={`Modi Yuva Marathon ${index + 1}`}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>

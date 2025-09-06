@@ -29,11 +29,11 @@ const Header = ({
           {heading}
         </h1>
         <div className="text-[#fb5d16] font-bold flex-1 text-center">
-          Theme: Emergency@50 <br />
+          {/* Theme: Emergency@50 <br /> */}
           {/* Remembering the Darkest Chapter of Indian Democracy <br/> */}
-          Dates: 27h June 2025
+          {/* Dates: 27h June 2025 */}
         </div>
-        <NavigationMenu />
+        {/* <NavigationMenu /> */}
       </div>
 
       {/* Admin Login Button */}

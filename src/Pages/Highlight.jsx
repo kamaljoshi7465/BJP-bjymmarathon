@@ -6,7 +6,7 @@ function Highlight() {
   return (
     <Layout>
       <Header
-        heading="BJYM Uttar Pradesh presents — Mock Parliament 2025"
+        heading="BJYM Uttar Pradesh presents — Modi Yuva Marathon 2025"
         showBackButton={true}
       />
       <div className="flex flex-col items-center justify-center px-4 py-8 text-gray-700">
@@ -45,7 +45,7 @@ function Highlight() {
 
           <section>
             <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
-              Objectives of Mock Parliament: Emergency@50
+              Objectives of Modi Yuva Marathon: Emergency@50
             </h2>
             <ul className="list-disc list-inside space-y-3 text-gray-700">
               <li>
@@ -76,7 +76,7 @@ function Highlight() {
               can be in the absence of public vigilance. As we observe 50 years
               of this historic event, it is our collective responsibility to
               ensure that such an assault on democracy is never repeated.
-              Through this Mock Parliament, BJYM Uttar Pradesh is empowering
+              Through this Modi Yuva Marathon, BJYM Uttar Pradesh is empowering
               youth to be informed, conscious, and responsible guardians of
               India’s democratic traditions.
             </p>
