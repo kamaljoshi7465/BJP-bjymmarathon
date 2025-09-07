@@ -27,7 +27,7 @@ const HomePage = () => {
             {topImages.map((img, index) => (
               <div
                 key={index}
-                className="rounded-xl shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
+                className="shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
               >
                 <img
                   src={img}
@@ -45,25 +45,25 @@ const HomePage = () => {
               Youth Power for a Drug-Free India
             </h3>
 
-          <p className="text-justify">
-            <span className="font-semibold">
-              Bharatiya Janata Yuva Morcha (BJYM) Uttar Pradesh
-            </span>
-            is proud to launch the{" "}
-            <span className="font-semibold">Modi Yuva Marathon</span> – a
-            statewide initiative to channel the strength, energy, and
-            determination of our youth towards building a{" "}
-            <span className="text-orange-600 font-semibold">
-              Nasha Mukt Bharat (Drug-Free India)
-            </span>
-            . This grand marathon will be organized in{" "}
-            <span className="font-semibold">
-              6 major cities of Uttar Pradesh
-            </span>
-            , bringing together thousands of young participants, fitness
-            enthusiasts, and change-makers with a single mission –
-            <span className=""> Say No to Drugs, Yes to Life!</span>
-          </p>
+            <p className="text-justify">
+              <span className="font-semibold">
+                Bharatiya Janata Yuva Morcha (BJYM) Uttar Pradesh
+              </span>
+              is proud to launch the{" "}
+              <span className="font-semibold">Modi Yuva Marathon</span> – a
+              statewide initiative to channel the strength, energy, and
+              determination of our youth towards building a{" "}
+              <span className="text-orange-600 font-semibold">
+                Nasha Mukt Bharat (Drug-Free India)
+              </span>
+              . This grand marathon will be organized in{" "}
+              <span className="font-semibold">
+                6 major cities of Uttar Pradesh
+              </span>
+              , bringing together thousands of young participants, fitness
+              enthusiasts, and change-makers with a single mission –
+              <span className=""> Say No to Drugs, Yes to Life!</span>
+            </p>
           </div>
         </div>
 
@@ -149,8 +149,17 @@ const HomePage = () => {
               </li>
               <li>Registration Fee: Free (pre-registration required).</li>
               <li>
-                How to Register: Online registration link will be available soon
-                on this website.
+                How to Register: Registration link is available here, you can
+                register yourself to be a part of this historic{" "}
+                <span className="font-semibold">Modi Yuva Marathon</span>.
+                <a
+                  href="https://docs.google.com/forms/d/1fsPfAQd07Nyj-4Dlfvf2YOW7LKlgs3R-1LSpcOsJtX4/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 text-orange-600 font-semibold underline hover:text-orange-800 transition-colors"
+                >
+                  Register Now
+                </a>
               </li>
             </ul>
           </div>
@@ -181,7 +190,7 @@ const HomePage = () => {
             {HighLightImages.map((img, index) => (
               <div
                 key={index}
-                className="rounded-xl shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
+                className="shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
               >
                 <img
                   src={img}
