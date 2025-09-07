@@ -9,9 +9,9 @@ function importAll(r) {
 const topImages = importAll(
   require.context("../Assets/Top", false, /\.(png|jpe?g|JPG|svg)$/)
 );
-// const HighLightImages = importAll(
-//   require.context("../Assets/HighLightImage", false, /\.(png|jpe?g|JPG|svg)$/)
-// );
+const HighLightImages = importAll(
+  require.context("../Assets/HighLightImages", false, /\.(png|jpe?g|JPG|svg)$/)
+);
 // const ArticleImages = importAll(
 //   require.context("../Assets/Article", false, /\.(png|jpe?g|svg)$/)
 // );
@@ -22,7 +22,7 @@ const HomePage = () => {
       <Header heading="Modi Yuva Marathon - For Nasha Mukt Bharat"/>
 
       <div className="flex flex-col justify-center items-center px-4 py-6">
-        <section className="w-full max-w-3xl mx-auto px-4 py-4 text-center">
+        <section className="w-full max-w-6xl mx-auto px-4 py-4 text-center">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
             {topImages.map((img, index) => (
               <div
@@ -44,7 +44,7 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <div className="w-full max-w-3xl space-y-6 text-gray-700 text-lg leading-relaxed">
+        <div className="w-full max-w-6xl space-y-6 text-gray-700 text-lg leading-relaxed">
           {/* <p className="font-semibold"> */}
           <p>
             On 21st of Sept, BJYM will be organising marathons in 75 cities,
@@ -83,6 +83,23 @@ const HomePage = () => {
             सेवा पखवाड़ा
           </p>
         </div>
+
+        <section className="w-full max-w-8xl mx-auto px-4 py-4 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            {HighLightImages.map((img, index) => (
+              <div
+                key={index}
+                className="rounded-xl shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
+              >
+                <img
+                  src={img}
+                  alt={`Modi Yuva Marathon ${index + 1}`}
+                  className="w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
         {/* Registresion  */}
         <div className="fixed bottom-5 left-0 right-0 flex justify-center z-50">
           <RegisterButton />
