@@ -151,15 +151,14 @@ const HomePage = () => {
               <li>
                 How to Register: Registration link is available here, you can
                 register yourself to be a part of this historic{" "}
-                <span className="font-semibold">Modi Yuva Marathon</span>.
+                <span className="font-semibold underline">
                 <a
                   href="https://docs.google.com/forms/d/1fsPfAQd07Nyj-4Dlfvf2YOW7LKlgs3R-1LSpcOsJtX4/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-2 text-orange-600 font-semibold underline hover:text-orange-800 transition-colors"
                 >
-                  Register Now
-                </a>
+                  Modi Yuva Marathon
+                </a> </span>.
               </li>
             </ul>
           </div>
