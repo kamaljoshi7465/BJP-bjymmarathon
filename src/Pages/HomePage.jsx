@@ -201,7 +201,7 @@ const HomePage = () => {
           </div>
         </section>
         {/* Registresion  */}
-        <div className="fixed bottom-5 left-0 right-0 flex justify-center z-50">
+        <div className="fixed bottom-12 left-0 right-0 flex justify-center z-50">
           <RegisterButton />
         </div>
       </div>
