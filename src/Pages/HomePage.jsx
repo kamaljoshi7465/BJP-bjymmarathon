@@ -2,7 +2,7 @@
 import Layout from "../Components/Layout";
 import Header from "../Components/Header";
 import RegisterButton from "../Buttons/RegisterButton";
-import logo from "../Assets/Logo/Untitled design (1).png";
+import logo from "../Assets/Logo/logo.png";
 
 function importAll(r) {
   return r.keys().map(r);
