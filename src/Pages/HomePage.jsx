@@ -2,6 +2,7 @@
 import Layout from "../Components/Layout";
 import Header from "../Components/Header";
 import RegisterButton from "../Buttons/RegisterButton";
+import logo from "../Assets/Logo/Untitled design (1).png";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -21,7 +22,30 @@ const HomePage = () => {
     <Layout>
       <Header heading="Modi Yuva Marathon - For Nasha Mukt Bharat" />
 
+      <img
+        src={logo}
+        alt="Modi Yuva Marathon"
+        className="w-full object-cover"
+      />
+
       <div className="flex flex-col justify-center items-center px-4 py-6">
+        {/* <section className="w-full max-w-6xl mx-auto px-4 py-4 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
+            {logo.map((img, index) => (
+              <div
+                key={index}
+                // className="shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
+              >
+                <img
+                  src={img}
+                  alt={`Modi Yuva Marathon ${index + 1}`}
+                  className="w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </section> */}
+
         <section className="w-full max-w-6xl mx-auto px-4 py-4 text-center">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
             {topImages.map((img, index) => (
@@ -152,13 +176,15 @@ const HomePage = () => {
                 How to Register: Registration link is available here, you can
                 register yourself to be a part of this historic{" "}
                 <span className="font-semibold underline">
-                <a
-                  href="https://docs.google.com/forms/d/1fsPfAQd07Nyj-4Dlfvf2YOW7LKlgs3R-1LSpcOsJtX4/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Modi Yuva Marathon
-                </a> </span>.
+                  <a
+                    href="https://docs.google.com/forms/d/1fsPfAQd07Nyj-4Dlfvf2YOW7LKlgs3R-1LSpcOsJtX4/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Modi Yuva Marathon
+                  </a>{" "}
+                </span>
+                .
               </li>
             </ul>
           </div>
