@@ -20,11 +20,11 @@ const HighLightImages = importAll(
 const HomePage = () => {
   return (
     <Layout>
-      <Header heading="Modi Yuva Marathon - For Nasha Mukt Bharat" />
+      <Header heading="Namo Yuva Run - For Nasha Mukt Bharat" />
 
       <img
         src={logo}
-        alt="Modi Yuva Marathon"
+        alt="Namo Yuva Run"
         className="w-full object-cover"
       />
 
@@ -38,7 +38,7 @@ const HomePage = () => {
               >
                 <img
                   src={img}
-                  alt={`Modi Yuva Marathon ${index + 1}`}
+                  alt={`Namo Yuva Run ${index + 1}`}
                   className="w-full object-cover"
                 />
               </div>
@@ -55,7 +55,7 @@ const HomePage = () => {
               >
                 <img
                   src={img}
-                  alt={`Modi Yuva Marathon ${index + 1}`}
+                  alt={`Namo Yuva Run ${index + 1}`}
                   className="w-full object-cover"
                 />
               </div>
@@ -74,7 +74,7 @@ const HomePage = () => {
                 Bharatiya Janata Yuva Morcha (BJYM) Uttar Pradesh
               </span>
               is proud to launch the{" "}
-              <span className="font-semibold">Modi Yuva Marathon</span> – a
+              <span className="font-semibold">Namo Yuva Run</span> – a
               statewide initiative to channel the strength, energy, and
               determination of our youth towards building a{" "}
               <span className="text-orange-600 font-semibold">
@@ -125,7 +125,7 @@ const HomePage = () => {
         <div className="w-full max-w-6xl mx-auto space-y-8 text-gray-700 text-base md:text-lg leading-relaxed mt-4">
           <div className="bg-gray-50 rounded-2xl shadow-md p-6 md:p-8 text-center">
             <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-              Why Join the Modi Yuva Marathon?
+              Why Join the Namo Yuva Run?
             </h3>
 
             <ul className="list-disc list-inside space-y-3 text-left md:text-lg text-gray-700">
@@ -181,7 +181,7 @@ const HomePage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Modi Yuva Marathon
+                    Namo Yuva Run
                   </a>{" "}
                 </span>
                 .
@@ -219,7 +219,7 @@ const HomePage = () => {
               >
                 <img
                   src={img}
-                  alt={`Modi Yuva Marathon ${index + 1}`}
+                  alt={`Namo Yuva Run ${index + 1}`}
                   className="w-full object-cover"
                 />
               </div>

@@ -20,7 +20,7 @@ function About() {
   return (
     <Layout>
       <Header
-        heading="Modi Yuva Marathon - For Nasha Mukt Bharat"
+        heading="Namo Yuva Run - For Nasha Mukt Bharat"
         showBackButton={true}
       />
 
@@ -34,7 +34,7 @@ function About() {
               >
                 <img
                   src={img}
-                  alt={`Modi Yuva Marathon ${index + 1}`}
+                  alt={`Namo Yuva Run ${index + 1}`}
                   className="w-full object-cover"
                 />
               </div>
@@ -43,7 +43,7 @@ function About() {
         </section>
         <div className="w-full max-w-3xl text-center mb-6">
           <h2 className="text-xl font-semibold text-gray-700">
-            Emergency@50 Modi Yuva Marathon Overview
+            Emergency@50 Namo Yuva Run Overview
           </h2>
         </div>
 

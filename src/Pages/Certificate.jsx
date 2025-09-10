@@ -5,7 +5,7 @@ const Certificate = () => {
   return (
     <Layout>
       <Header
-        heading="BJYM Uttar Pradesh presents — Modi Yuva Marathon 2025"
+        heading="BJYM Uttar Pradesh presents — Namo Yuva Run 2025"
         showBackButton={true}
       />
 

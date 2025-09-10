@@ -16,7 +16,7 @@ function MediaCoverage() {
   return (
     <Layout>
       <Header
-        heading="BJYM Uttar Pradesh presents — Modi Yuva Marathon 2025"
+        heading="BJYM Uttar Pradesh presents — Namo Yuva Run 2025"
         showBackButton={true}
       />
       <div className="flex flex-col items-center justify-center py-2 px-4 text-center">
@@ -34,7 +34,7 @@ function MediaCoverage() {
                 <div className="h-64 bg-white flex items-center justify-center">
                   <img
                     src={img}
-                    alt={`Modi Yuva Marathon ${index + 1}`}
+                    alt={`Namo Yuva Run ${index + 1}`}
                     className="object-contain h-full"
                   />
                 </div>

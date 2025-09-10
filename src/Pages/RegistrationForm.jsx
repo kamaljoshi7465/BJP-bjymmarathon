@@ -36,13 +36,13 @@ function RegistrationForm() {
   return (
     <Layout>
       <Header
-        heading="BJYM Uttar Pradesh presents — Modi Yuva Marathon 2025"
+        heading="BJYM Uttar Pradesh presents — Namo Yuva Run 2025"
         showBackButton={true}
       />
 
       <section className="bg-gray-50 py-10 px-4 flex flex-col items-center">
         <h2 className="text-3xl font-bold text-[#fb5d16] mb-4 text-center">
-          Register for Modi Yuva Marathon 2025
+          Register for Namo Yuva Run 2025
         </h2>
 
         <p className="text-center max-w-2xl text-gray-700 text-lg mb-10">
