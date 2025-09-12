@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage';
 import RegistrationForm from './Pages/RegistrationForm';
+import GorakhpurMarathon from './Pages/GorakhpurMarathon';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         {/* <Route path="/certificate" element={<Certificate />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/media-coverage" element={<MediaCoverage />} /> */}
+        <Route path="/gorakhpur-marathon" element={<GorakhpurMarathon />} />
       </Routes>
     </Router>
   );

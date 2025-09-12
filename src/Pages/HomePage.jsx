@@ -1,8 +1,11 @@
-// import React from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Layout from "../Components/Layout";
 import Header from "../Components/Header";
 import RegisterButton from "../Buttons/RegisterButton";
 import logo from "../Assets/Logo/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -13,22 +16,16 @@ const topImages = importAll(
 const HighLightImages = importAll(
   require.context("../Assets/HighLightImages", false, /\.(png|jpe?g|JPG|svg)$/)
 );
-// const ArticleImages = importAll(
-//   require.context("../Assets/Article", false, /\.(png|jpe?g|svg)$/)
-// );
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <Layout>
       <Header heading="Namo Yuva Run - For Nasha Mukt Bharat" />
 
-      <img
-        src={logo}
-        alt="Namo Yuva Run"
-        className="w-full object-cover"
-      />
+      <img src={logo} alt="Namo Yuva Run" className="w-full object-cover" />
 
-      <div className="flex flex-col justify-center items-center px-4 py-6">
+      <div className="flex flex-col justify-center items-center px-4 py-2">
         {/* <section className="w-full max-w-6xl mx-auto px-4 py-4 text-center">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
             {logo.map((img, index) => (
@@ -46,12 +43,23 @@ const HomePage = () => {
           </div>
         </section> */}
 
-        <section className="w-full max-w-6xl mx-auto px-4 py-4 text-center">
+      <div className="flex justify-center gap-4">
+        <button
+          onClick={() => navigate("/gorakhpur-marathon")}
+          className="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium rounded-xl shadow-lg transition duration-300 ease-out bg-[#fb5d16] text-white hover:scale-105 hover:shadow-xl"
+        >
+          {/* <FaImages className="mr-2 text-lg transition-transform duration-300 group-hover:rotate-12" /> */}
+          Gorakhpur Marathon
+          <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
+        </button>
+      </div>
+
+        <section className="w-full max-w-8xl mx-auto py-2 text-center">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
             {topImages.map((img, index) => (
               <div
                 key={index}
-                className="shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
+                className="shadow-md overflow-hidden group transform  transition duration-300"
               >
                 <img
                   src={img}
@@ -74,9 +82,9 @@ const HomePage = () => {
                 Bharatiya Janata Yuva Morcha (BJYM) Uttar Pradesh
               </span>
               is proud to launch the{" "}
-              <span className="font-semibold">Namo Yuva Run</span> – a
-              statewide initiative to channel the strength, energy, and
-              determination of our youth towards building a{" "}
+              <span className="font-semibold">Namo Yuva Run</span> – a statewide
+              initiative to channel the strength, energy, and determination of
+              our youth towards building a{" "}
               <span className="text-orange-600 font-semibold">
                 Nasha Mukt Bharat (Drug-Free India)
               </span>
