@@ -49,7 +49,7 @@ const HomePage = () => {
           className="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium rounded-xl shadow-lg transition duration-300 ease-out bg-[#fb5d16] text-white hover:scale-105 hover:shadow-xl"
         >
           {/* <FaImages className="mr-2 text-lg transition-transform duration-300 group-hover:rotate-12" /> */}
-          Gorakhpur Marathon
+          Media
           <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
         </button>
       </div>

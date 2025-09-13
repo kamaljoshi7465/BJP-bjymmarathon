@@ -7,7 +7,7 @@ function importAll(r) {
 }
 
 const GorakhpurMarathonImage = importAll(
-  require.context("../Assets/GorakhpurMarathon", false, /\.(png|jpe?g|svg)$/)
+  require.context("../Assets/Media/GorakhpurMarathon", false, /\.(png|jpe?g|svg)$/)
 );
 
 function GorakhpurMarathon() {
