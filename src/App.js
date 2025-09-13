@@ -2,21 +2,16 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage';
 import RegistrationForm from './Pages/RegistrationForm';
-import GorakhpurMarathon from './Pages/GorakhpurMarathon';
-
+import Gorakhpur from './Pages/Media/Gorakhpur';
+import Meerut from './Pages/Media/Meerut';
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/introduction" element={<Introduction />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/highlights" element={<Highlight />} /> */}
         <Route path="/register" element={<RegistrationForm />} />
-        {/* <Route path="/certificate" element={<Certificate />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/media-coverage" element={<MediaCoverage />} /> */}
-        <Route path="/gorakhpur-marathon" element={<GorakhpurMarathon />} />
+        <Route path="/media/gorakhpur" element={<Gorakhpur />} />
+        <Route path="/media/meerut" element={<Meerut />} />
       </Routes>
     </Router>
   );

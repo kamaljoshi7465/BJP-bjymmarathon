@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import AboutButton from "../Buttons/AboutButton";
 import Home from "../Buttons/Home";
-import MediaCoverageButton from "../Buttons/MediaCoverageButton";
-import EventHighlightsButton from "../Buttons/EventHighlights";
-import GalleryButton from "../Buttons/GalleryButton";
-import CertificateButton from "../Buttons/CertificateButton";
+import MeerutMarathonButton from "../Buttons/MeerutMarathonButton";
+import GorakhpurMarathonButton from "../Buttons/GorakhpurMarathonButton copy";
 
 function NavigationMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,24 +22,18 @@ function NavigationMenu() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="flex flex-col gap-4 mt-4 md:hidden">
+        <div className="flex flex-col gap-4 mt-4 md:hidden justify-center">
           <Home />
-          <AboutButton />
-          <MediaCoverageButton />
-          <EventHighlightsButton />
-          <GalleryButton />
-          <CertificateButton />
+          <GorakhpurMarathonButton />
+          <MeerutMarathonButton />
         </div>
       )}
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex flex-row gap-4">
+      <div className="hidden md:flex flex-row gap-4 justify-center">
         <Home />
-        <AboutButton />
-        <MediaCoverageButton />
-        <EventHighlightsButton />
-        <GalleryButton />
-        <CertificateButton />
+        <GorakhpurMarathonButton />
+        <MeerutMarathonButton />
       </div>
     </div>
   );

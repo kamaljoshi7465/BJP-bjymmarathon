@@ -1,16 +1,17 @@
-import Layout from "../Components/Layout";
-import Header from "../Components/Header";
 import { useState } from "react";
+import Layout from "../../Components/Layout";
+import Header from "../../Components/Header";
+import NavigationMenu from "../../Menu/NavigationMenu";
 
 function importAll(r) {
   return r.keys().map(r);
 }
 
-const GorakhpurMarathonImage = importAll(
-  require.context("../Assets/Media/GorakhpurMarathon", false, /\.(png|jpe?g|svg)$/)
+const GorakhpurImage = importAll(
+  require.context("../../Assets/Media/Gorakhpur", false, /\.(png|jpe?g|svg)$/)
 );
 
-function GorakhpurMarathon() {
+function Gorakhpur() {
   const [selectedImage, setSelectedImage] = useState(null);
   const openImage = (imgSrc) => setSelectedImage(imgSrc);
   const closeImage = () => setSelectedImage(null);
@@ -18,15 +19,19 @@ function GorakhpurMarathon() {
   return (
     <Layout>
       <div className="max-w-7xl mx-auto px-4">
-      <Header heading="Namo Yuva Run - For Nasha Mukt Bharat" showBackButton={true} />
+        <Header
+          heading="Namo Yuva Run - For Nasha Mukt Bharat"
+          showBackButton={true}
+        />
 
         <div className="flex flex-col items-center justify-center py-2 px-4 text-center">
           <div className="w-full max-w-8xl text-center space-y-6 text-gray-700 text-lg leading-relaxed">
+            <NavigationMenu />
             <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
               Gorakhpur Marathon
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[...GorakhpurMarathonImage].map((imgSrc, index) => (
+              {[...GorakhpurImage].map((imgSrc, index) => (
                 <div
                   key={index}
                   onClick={() => openImage(imgSrc)}
@@ -68,4 +73,4 @@ function GorakhpurMarathon() {
   );
 }
 
-export default GorakhpurMarathon;
+export default Gorakhpur;
