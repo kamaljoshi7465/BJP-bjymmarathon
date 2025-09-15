@@ -24,9 +24,9 @@ function Meerut() {
         <div className="flex flex-col items-center justify-center py-2 px-4 text-center">
           <div className="w-full max-w-8xl text-center space-y-6 text-gray-700 text-lg leading-relaxed">
             <NavigationMenu />
-            <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
+            {/* <h2 className="text-2xl font-bold mb-4 text-center text-gray-700">
               Meerut Marathon
-            </h2>
+            </h2> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[...MeerutImage].map((imgSrc, index) => (
                 <div
