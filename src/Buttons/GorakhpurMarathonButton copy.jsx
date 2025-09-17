@@ -1,13 +1,13 @@
 import React from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function GorakhpurMarathonButton() {
   const navigate = useNavigate();
   const location = useLocation();
-  const isActive = location.pathname === "/about";
+  const isActive = location.pathname === "/media/gorakhpur";
 
   return (
     <button
@@ -20,7 +20,7 @@ function GorakhpurMarathonButton() {
     >
       <FaInfoCircle className="mr-2 text-lg transition-transform duration-300 group-hover:rotate-12" />
         Gorakhpur
-      <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
+      {/* <FontAwesomeIcon icon={faArrowRight} className="ml-1" /> */}
     </button>
   );
 }

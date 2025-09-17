@@ -107,8 +107,7 @@ const HomePage = () => {
 
             <ul className="list-disc list-inside space-y-3 text-left md:text-lg text-gray-700">
               <li>
-                Marathon Across 6 Cities: Covering key urban centers of Uttar
-                Pradesh.
+                Marathon Across 16 Cities (<span className="text-orange-600 font-semibold">Lucknow Mahanagar, Gorakhpur, Varanasi, Ghaziabad, Agra Mahanagar, Bareilly, Moradabad, Meerut Mahanagar, Aligarh Mahanagar, Prayagraj Mahanagar, Ayodhya Mahanagar, Jhansi Mahanagar, Mathura, Firozabad, Saharanpur, Shahjahanpur</span>): Covering key urban centers of Uttar Pradesh.
               </li>
               <li>
                 Participation of Thousands of Youth: Students, athletes,
