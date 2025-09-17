@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage';
-import RegistrationForm from './Pages/RegistrationForm';
+// import RegistrationForm from './Pages/RegistrationForm';
 import Gorakhpur from './Pages/Media/Gorakhpur';
 import Meerut from './Pages/Media/Meerut';
 function App() {

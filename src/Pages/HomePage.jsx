@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Layout from "../Components/Layout";
 import Header from "../Components/Header";
@@ -13,9 +13,64 @@ function importAll(r) {
 const topImages = importAll(
   require.context("../Assets/Top", false, /\.(png|jpe?g|JPG|svg)$/)
 );
-const HighLightImages = importAll(
-  require.context("../Assets/HighLightImages", false, /\.(png|jpe?g|JPG|svg)$/)
-);
+const HighLightImages = [
+  "https://drive.google.com/thumbnail?id=1Hh4QiSQQAVOc9GrXlnVBJEcCVM-v3ih9&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1gpMM-sbYFelXHRIaC-VjOaZBbdNUIcwM&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1uJjXWjabojR6Pf1h5GgbRH9kQlMxdXWo&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1b92U5cNUHcGeDnlm-dQLNxYSfOijUvIh&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1IP_A8qEsU4nxBdPhM_eJVEg25mD1iHZn&sz=s2048",
+  "https://drive.google.com/thumbnail?id=14HrazOxT7rt0LLLok-z1FGRKaExXJgSh&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1cfE4N4NDNldqBg4F1VoslnjrH3Z8kjfN&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1efEvi3Fl1Uju8WvetAZ8xBqeXEV1Q4rU&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1jgg_8QqbESOfaultQ_VU_0EPh9NpvXlt&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1svMAZqAc9Rw9P3emq795XVKkXQ13EaJd&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1ghZpZARUkcQA-I8Kbpdz1gIJzc8DlOPD&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1Ld4rHzFMLQaM2U47z_Mn68ogg5XunS85&sz=s2048",
+  "https://drive.google.com/thumbnail?id=13qyrNhsxgn-bnwNTRVhXfcM4ltKxhk6i&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1T7wcPiDAeybGB7Kd-VtxYCGzzTSCHCWm&sz=s2048",
+];
+
+const LazyLoadedImage = ({ src, alt, className }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        rootMargin: "100px",
+      }
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <img
+      ref={imageRef}
+      src={isVisible ? src : ""}
+      alt={alt}
+      className={`${className} ${
+        isVisible ? "opacity-100" : "opacity-0"
+      } transition-opacity duration-500`}
+    />
+  );
+};
 
 const HomePage = () => {
   const navigate = useNavigate();
