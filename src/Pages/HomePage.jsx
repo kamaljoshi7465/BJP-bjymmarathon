@@ -14,24 +14,40 @@ const topImages = importAll(
   require.context("../Assets/Top", false, /\.(png|jpe?g|JPG|svg)$/)
 );
 const HighLightImages = [
-  "https://drive.google.com/thumbnail?id=1Hh4QiSQQAVOc9GrXlnVBJEcCVM-v3ih9&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1gpMM-sbYFelXHRIaC-VjOaZBbdNUIcwM&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1uJjXWjabojR6Pf1h5GgbRH9kQlMxdXWo&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1b92U5cNUHcGeDnlm-dQLNxYSfOijUvIh&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1IP_A8qEsU4nxBdPhM_eJVEg25mD1iHZn&sz=s2048",
-  "https://drive.google.com/thumbnail?id=14HrazOxT7rt0LLLok-z1FGRKaExXJgSh&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1cfE4N4NDNldqBg4F1VoslnjrH3Z8kjfN&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1efEvi3Fl1Uju8WvetAZ8xBqeXEV1Q4rU&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1jgg_8QqbESOfaultQ_VU_0EPh9NpvXlt&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1svMAZqAc9Rw9P3emq795XVKkXQ13EaJd&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1ghZpZARUkcQA-I8Kbpdz1gIJzc8DlOPD&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1Ld4rHzFMLQaM2U47z_Mn68ogg5XunS85&sz=s2048",
-  "https://drive.google.com/thumbnail?id=13qyrNhsxgn-bnwNTRVhXfcM4ltKxhk6i&sz=s2048",
-  "https://drive.google.com/thumbnail?id=1T7wcPiDAeybGB7Kd-VtxYCGzzTSCHCWm&sz=s2048",
+  "https://drive.google.com/thumbnail?id=10RpFUKppbwby83mHljAhcKCCP22ggE7o&sz=s2048",
+  "https://drive.google.com/thumbnail?id=15jsyKexnms916J-3zMoDQtsytzOwJxpC&sz=s2048",
+  "https://drive.google.com/thumbnail?id=174lZ5Hl4-6L4hwwX9SLgTAm1yAtWAHYK&sz=s2048",
+  "https://drive.google.com/thumbnail?id=17p0gnLRJHt-X7DRSaDj7WtByH4X_Mqzq&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1CPv4zh_nfbDO-qcNgHLWANF-uLP5KKXq&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1Ibe1MNY2ZYiKbZrPbw0anYAmlMlPbhw5&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1K2-pxudmu0dCfuTFHqgQDlVhzpKkG9kp&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1qmhUWzmYJ6ayWrYIsyTwP0FlcQCU3-qb&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1ljHzAA8VAlW5bbSIfcD9lYhagRV08_eq&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1XLQxvDsP2yZjXCfGhwLZOQVM4jHb884W&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1WVpUY8wepU-FzK5Zl6yqTT0p5DaEH0P4&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1SLJ973KLvLZoAGbAoiUWzFzjFEDrL4uz&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1TKKyIMJ-V_-bpbvysCqGkRg0kPBNr56q&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1Np9tOHsTKaPKR0INyzdObQtmLhta3umM&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1MDDOvl-1-nc1MU-dKJ0vh9ECs0Qf93k-&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1DT89umoT4_B61nDHkvWiAB3WL5pqOF3k&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1AfbFcGVkrMpNLzgQ0O4gT5-YWOexVYQ0&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1BTXq0y0pCPVtwXdPASIgPAzZk2tfl8z4&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1LIJ49cZHOzSVIk9u7uTYWprAi1HoAxWL&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1LpwDAVgRxO1ckptwJLE6fmnkA46IVHul&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1NCVCzP0aYkM3TFEsm4TtqEoVoJcWqcEj&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1SErN3K8zTME7bC3QSMo1Fp9mextg9bX3&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1VBAl7kPvgoWvQ3p-AJyYIGLFNsuRpIMb&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1bbx1fG9Oxmo4ZkfUP4_BLys6l-G3bnG3&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1i-qkWHRwdnbTMFBCsgTR-WbeEmIP-97n&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1lIWvAdKK6lxDrTMiWadem8Ikyp_igkdo&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1n-j10MCHSpPhDz3wpwh2BAYX5qwzZv1Q&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1tZpJZjcqmVX0zbKXiYw6uVszORVS2B9V&sz=s2048",
+  "https://drive.google.com/thumbnail?id=1uqfPWbUajQdL6AAVoDeY4a_UAG6JLcjo&sz=s2048",
+  "https://drive.google.com/thumbnail?id=11bd7r6mNKOS3_qMB7YlyBheFlwQYAZMV&sz=s2048",
 ];
 
 const LazyLoadedImage = ({ src, alt, className }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -39,7 +55,7 @@ const LazyLoadedImage = ({ src, alt, className }) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true);
+            setIsLoaded(true);
             observer.unobserve(entry.target);
           }
         });
@@ -63,10 +79,10 @@ const LazyLoadedImage = ({ src, alt, className }) => {
   return (
     <img
       ref={imageRef}
-      src={isVisible ? src : ""}
+      src={isLoaded ? src : null}
       alt={alt}
       className={`${className} ${
-        isVisible ? "opacity-100" : "opacity-0"
+        isLoaded ? "opacity-100" : "opacity-0"
       } transition-opacity duration-500`}
     />
   );
