@@ -65,13 +65,15 @@ const LazyLoadedImage = ({ src, alt, className }) => {
       }
     );
 
-    if (imageRef.current) {
-      observer.observe(imageRef.current);
+    const currentImageRef = imageRef.current;
+
+    if (currentImageRef) {
+      observer.observe(currentImageRef);
     }
 
     return () => {
-      if (imageRef.current) {
-        observer.unobserve(imageRef.current);
+      if (currentImageRef) {
+        observer.unobserve(currentImageRef);
       }
     };
   }, []);
@@ -161,7 +163,7 @@ const HomePage = () => {
               </span>
               . This grand marathon will be organized in{" "}
               <span className="font-semibold">
-                6 major cities of Uttar Pradesh
+                16 major cities of Uttar Pradesh
               </span>
               , bringing together thousands of young participants, fitness
               enthusiasts, and change-makers with a single mission –
@@ -295,7 +297,8 @@ const HomePage = () => {
                 key={index}
                 className="shadow-md overflow-hidden group transform hover:scale-105 transition duration-300"
               >
-                <img
+                {/* Correctly using the LazyLoadedImage component */}
+                <LazyLoadedImage
                   src={img}
                   alt={`Namo Yuva Run ${index + 1}`}
                   className="w-full object-cover"
@@ -304,7 +307,7 @@ const HomePage = () => {
             ))}
           </div>
         </section>
-        {/* Registresion  */}
+        {/* Registration  */}
         <div className="fixed bottom-12 left-0 right-0 flex justify-center z-50">
           <RegisterButton />
         </div>
