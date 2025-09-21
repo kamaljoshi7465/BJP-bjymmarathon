@@ -6,6 +6,7 @@ import RegisterButton from "../Buttons/RegisterButton";
 import logo from "../Assets/Logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import CertificateButton from "../Buttons/CertificateButton";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -125,6 +126,7 @@ const HomePage = () => {
           Media
           <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
         </button>
+        {/* <CertificateButton /> */}
       </div>
 
         <section className="w-full max-w-8xl mx-auto py-2 text-center">
