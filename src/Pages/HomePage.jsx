@@ -126,7 +126,7 @@ const HomePage = () => {
           Media
           <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
         </button>
-        <CertificateButton />
+        {/* <CertificateButton /> */}
       </div>
 
         <section className="w-full max-w-8xl mx-auto py-2 text-center">
