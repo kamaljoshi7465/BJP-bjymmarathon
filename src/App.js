@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage';
 import Gorakhpur from './Pages/Media/Gorakhpur';
 import Meerut from './Pages/Media/Meerut';
+import Certificate from './Pages/Certificate';
 function App() {
   return (
     <Router>
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/media/gorakhpur" element={<Gorakhpur />} />
         <Route path="/media/meerut" element={<Meerut />} />
+        <Route path="/certificate" element={<Certificate />} />
       </Routes>
     </Router>
   );
