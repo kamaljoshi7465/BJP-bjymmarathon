@@ -97,50 +97,47 @@ const Certificate = () => {
       </div>
 
       {certificateData && (
-        <div className="flex flex-col items-center justify-center">
-          <div
-            id="certificate"
-            className="relative w-[150mm] h-[100mm] bg-[#fff4e6]"
-          >
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#fff4e6] shadow-lg rounded-lg border-2 border-[#fb5d16] w-[140mm] h-[90mm] flex flex-col justify-between p-4">
+        <div className="flex flex-col items-center justify-center p-4">
+          <div id="certificate" className="relative bg-[#fff4e6] w-full max-w-[900px] h-auto aspect-[3/2] md:w-[150mm] md:h-[100mm]">
+            <div className="absolute inset-0 bg-[#fff4e6] shadow-lg rounded-lg border-2 border-[#fb5d16] flex flex-col justify-between p-4">
               {/* Watermark */}
               <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none select-none">
                 <img
                   src={logo}
                   alt="Watermark Logo"
-                  className="w-[50mm] h-auto opacity-30"
+                  className="w-1/2 md:w-[50mm] h-auto opacity-30"
                 />
               </div>
 
               {/* Ribbon */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#fb5d16] text-white px-4 py-1 rounded-full text-base font-semibold shadow z-10">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#fb5d16] text-white px-3 py-1 rounded-full text-xs sm:text-sm md:text-base font-semibold shadow z-10">
                 Marathon – Noida
               </div>
 
               {/* Certificate Content */}
               <div className="relative z-10 text-center mt-6">
-                <h1 className="text-[#fb5d16] font-bold text-xl mb-1">
+                <h1 className="text-[#fb5d16] font-bold text-lg sm:text-xl md:text-2xl mb-1">
                   Certificate of Participation
                 </h1>
-                <p className="text-sm">This is proudly presented to</p>
-                <h2 className="font-semibold underline text-lg mt-1">
+                <p className="text-xs sm:text-sm md:text-base">
+                  This is proudly presented to
+                </p>
+                <h2 className="font-semibold underline text-base sm:text-lg md:text-xl mt-1 break-words">
                   {certificateData?.Full_Name}
                 </h2>
 
-                <div className="text-sm text-gray-600 mt-2">
+                <div className="text-xs sm:text-sm md:text-base text-gray-600 mt-2 space-y-1">
                   <div>
                     <strong>Phone:</strong> {certificateData.phone}
                   </div>
-                  <div>
-                    {certificateData.Address && (
-                      <>
-                        <strong>Address:</strong> {certificateData.Address}
-                      </>
-                    )}
-                  </div>
+                  {certificateData.Address && (
+                    <div>
+                      <strong>Address:</strong> {certificateData.Address}
+                    </div>
+                  )}
                 </div>
 
-                <p className="text-sm text-gray-700 mt-3 px-4 leading-snug">
+                <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-3 px-2 sm:px-4 leading-snug">
                   For actively participating in the national initiative and
                   promoting civic awareness through the <br />
                   <span className="font-semibold text-[#fb5d16]">
@@ -149,7 +146,7 @@ const Certificate = () => {
                   .
                 </p>
 
-                <div className="flex justify-between items-center text-xs mt-6 px-6">
+                <div className="flex justify-between items-center text-[10px] sm:text-xs md:text-sm mt-6 px-4 sm:px-6">
                   <p className="border-t border-black w-2/5 text-center pt-1">
                     Authorized Signature
                   </p>
@@ -160,13 +157,6 @@ const Certificate = () => {
               </div>
             </div>
           </div>
-
-          {/* <button
-            onClick={downloadPDF}
-            className="mt-6 bg-[#fb5d16] text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-[#e65c1c] transition"
-          >
-            Download Certificate
-          </button> */}
         </div>
       )}
     </Layout>
