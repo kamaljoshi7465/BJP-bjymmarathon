@@ -6,7 +6,7 @@ import RegisterButton from "../Buttons/RegisterButton";
 import logo from "../Assets/Logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import CertificateButton from "../Buttons/CertificateButton";
+// import CertificateButton from "../Buttons/CertificateButton";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -119,7 +119,7 @@ const HomePage = () => {
 
       <div className="flex justify-center gap-4">
         <button
-          onClick={() => navigate("/media/gorakhpur")}
+          onClick={() => navigate("/media/gallery")}
           className="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium rounded-xl shadow-lg transition duration-300 ease-out bg-[#fb5d16] text-white hover:scale-105 hover:shadow-xl"
         >
           {/* <FaImages className="mr-2 text-lg transition-transform duration-300 group-hover:rotate-12" /> */}
